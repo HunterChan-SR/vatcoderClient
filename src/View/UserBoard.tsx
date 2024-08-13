@@ -108,11 +108,16 @@ export default function UserBoard() {
 
     return (
         <>
+            <p>8.13不定时停机更新，若出现提交失败，请稍后刷新页面后重试。</p>
             <AdminButton adminGroup={userData.level === "管理员组"}/>
             <Card size="small" style={{width: 800}} loading={loading}>
                 <p>{userData.username}</p>
                 <p>{userData.truename}</p>
                 <p>{userData.level}</p>
+                <Button
+                    type={"primary"}
+                    href={"/user/change_password"}
+                >修改密码</Button>
                 <Button
                     danger={true}
                     onClick={() => {
