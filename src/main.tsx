@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
 import './index.css'
 
-const serverHost = "http://liamaking.eu.org";
+const serverHost = "";
 export const api_url = serverHost + ":2080";
 export const proxy_url = serverHost + ":2090";
 
